@@ -45,8 +45,10 @@ export const Pago = () => {
                 </td>
                 <td><h3>Todo el juego con sus plus A TAN SOLO $1200</h3><PaypalCheckoutButton order={order} /></td>
               </tr>
-              Correo : sb-pj6zf26031566@personal.example.com
-              Contraseña: O^M!E5Ks
+              <h5>
+                Correo : sb-pj6zf26031566@personal.example.com
+                Contraseña: O^M!E5Ks
+              </h5>
             </tbody>
           </table>
         </div>
