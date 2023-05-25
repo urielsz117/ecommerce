@@ -1,51 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import PaypalCheckoutButton from './components/PaypalCheckoutButton';
+import React from 'react'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import { Register } from './pages/Register'
+import { Login } from './pages/Login'
+import { Secret } from './pages/Secret'
+import { Pago } from './pages/Pago'
+import "react-toastify/dist/ReactToastify.css"
+import { Perfil } from './pages/Perfil'
 
-function App() {
-
-  const order = {
-    customer: '123456',
-    total: '1200.00',
-    items:[
-      {
-        sku: '112',
-        name: 'Video Juego',
-        price: '1000.00',
-        quantity: 1,
-        currency: 'MXN'
-      },
-      {
-        sku: '113',
-        name: 'DLC',
-        price: '200.00',
-        quantity: 1,
-        currency: 'MXN'
-      },
-    ]
-  };
-
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-
-        <PaypalCheckoutButton order={order} />
-
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/" element={<Secret />} />
+        <Route exact path="/pago" element={<Pago />} />
+        <Route exact path="/perfil" element={<Perfil />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
-
-export default App;

@@ -1,13 +1,305 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.formloginregister {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 236, 238);
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  background-color: white;
+  padding: 1rem 3rem;
+  padding-bottom: 2rem;
+  border-radius: 0.5rem;
+  border-top: rgb(20, 20, 20) 0.5rem solid;
+}
+
+h2 {
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid gray;
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+span a {
+  text-decoration: none;
+  color: rgb(80, 98, 255);
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  margin-left: 150px;
+  font-size: 200em;
+}
+
+.Tablep {
+  width: 100%;
+  height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #4e4d4d;
+  min-height: 10vh;
+  font-size: calc(10px + 4vmin);
+  color: #49df2b;
+  font-family: 'Ink Free';
+  display: table;
+  width: 100%;
+}
+
+.App-header div {
+  display: table-cell;
+}
+
+.Enlaces {
+  font-size: calc(10px + 1vmin);
+  font-family: 'Comic Sans MS';
+  padding-right: 20px;
+  color: #fafafa;
+}
+
+.enlacesdiv {
+  float: right;
+  margin-right: 50px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.BodyComponente {
+  background-color: #FFFAE7;
+  min-height: 90vh;
+  padding: 150px;
+}
+
+.titulo {
+  font-family: 'Century Gothic';
+  font-size: calc(10px + 4vmin);
+}
+
+.dicho {
+  margin-top: 5%;
+  font-family: 'Microsoft YaHei';
+  font-size: calc(10px + 1vmin);
+}
+
+.dicho2 {
+  font-family: 'Microsoft YaHei';
+  font-size: calc(10px + 1vmin);
+}
+
+.game {
+  height: 400px;
+  border-radius: 20px;
+}
+
+.plus {
+  height: 100px;
+  margin-bottom: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.oferta {
+  height: 300px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.banner {
+  height: 400px;
+  border-radius: 20px;
+  margin-top: 5%;
+}
+
+.informacion{
+  font-family: 'Ink Free';
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+.footer {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#footer>div {
+  width: 50%;
+}
+
+.nosotros {
+  background-color: #fafafa;
+  width: 40%;
+}
+
+.nosotros2 {
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+.formulario {
+  background-color: white;
+  width: 60%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+.imputsForm {
+  margin-top: 2%;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ////////////////////////////////////////////////////////////////// CARD */
+.card {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+
+
+/* /////////////////////////////////////////////////////////// */
+.input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  margin-top: 8%;
+  
+}
+
+.input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
+
+.fotoP{
+  margin: 1em;
+}
+
+.info{
+  margin-bottom  : 400px;
 }
